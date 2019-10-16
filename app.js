@@ -5,6 +5,7 @@ const agee = document.getElementById('age1');
 const photoo = document.getElementById('photo1');
 const descriptioon = document.getElementById('description1')
 
+
 const apiUrl = 'https://localhost:5001/simpsons/character'
 
 const apiResponse = async url => {
@@ -14,8 +15,6 @@ const apiResponse = async url => {
 
     const {name, secondName, lastName, age, description} = data;
     const imgpic = data.photo;
-
-
 
     photoo.src = imgpic;
     agee.innerText = age;
